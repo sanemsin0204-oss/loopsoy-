@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Loopsoy | Crochet projects, supplies &amp; pro tips</title>
+<meta name="description" content="Loopsoy shares crochet projects, the exact supplies I used (affiliate links), pro tips, and the tutorials I follow.">
+<meta name="keywords" content="crochet, crochet bag pattern, granny stitch, handmade crochet, crochet tutorial, crochet tools">
+<link rel="canonical" href="https://www.madewithloops.com/">
+
+<!-- Open Graph / social preview -->
+<meta property="og:type" content="website">
+<meta property="og:title" content="Made with Loops | Handmade Crochet Bag Patterns &amp; Tutorials">
+<meta property="og:description" content="Crochet bag patterns, pro tips, and the exact yarn, hooks, and tools used for every project.">
+<meta property="og:image" content="https://www.madewithloops.com/images/logo.png">
+<meta property="og:url" content="https://www.madewithloops.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="images/favicon.png">
+<link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Caveat:wght@600&family=Nunito:wght@400;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Loopsoy",
+  "alternateName": "Loopsoy",
+  "url": "./",
+  "description": "Crochet projects, supplies used (affiliate links), and practical pro tips.",
+  "publisher": {
+    "@type": "Organization",
+    "name": "Loopsoy",
+    "logo": "./images/logo.png"
+  }
+}
+</script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site-nav">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Loopsoy home">
+        <img src="images/logo.png" alt="Loopsoy logo" width="44" height="44">
+        <span class="brand-word">loopsoy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="supplies.html">Supplies</a></li>
+          <li><a class="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="container">
+      <img class="logo-mark" src="images/logo.png" alt="Loopsoy — crochet, creations, joy" width="128" height="128">
+      <p class="tagline">Crochet <span class="dot">&bull;</span> Creations <span class="dot">&bull;</span> Joy</p>
+      <span class="eyebrow">Welcome to Loopsoy!</span>
+      <h1>Hi — I'm so glad you're here</h1>
+      <p class="hero-copy">
+        I've always loved making things I can actually use. I tried many crafts —
+        macramé, resin art, papercraft and more — but crochet finally stuck. It's
+        been about 13 months since I began crocheting, and I now have a cupboard
+        full of supplies and finished projects.
+      </p>
+      <p class="hero-copy" style="margin-top:8px;">
+        What you'll find here: projects I've made, the exact supplies I used
+        (Amazon affiliate links), honest pro tips, and the YouTube tutorials I followed.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="projects.html">Browse projects</a>
+        <a class="btn btn-outline" href="supplies.html">See supplies</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <svg class="yarn-divider" viewBox="0 0 300 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <path d="M4 20 C 60 -6, 100 46, 150 20 S 240 -6, 260 20" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
+      <path d="M262 20c-6-7-6-15 2-18 7-3 13 3 11 10-2 6-9 9-13 15-3-8-9-9-13-5" stroke="currentColor" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+  </div>
+
+  <section class="section" id="about">
+    <!-- about section removed; Projects and Supplies have their own pages -->
+
+  <!-- Projects and Supplies moved to separate pages: projects.html and supplies.html -->
+
+</main>
+
+<footer>
+    <div class="container">
+    <a class="brand" href="index.html" aria-label="Loopsoy home">
+      <span class="brand-word">loopsoy</span>
+    </a>
+    <ul class="footer-links">
+      <li><a href="projects.html">Projects</a></li>
+      <li><a href="supplies.html">Supplies</a></li>
+      <li><a class="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></li>
+    </ul>
+    <p class="copyright">As an Amazon Associate I earn from qualifying purchases. &copy; <span id="year"></span> Loopsoy.</p>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // gentle reveal-on-scroll for cards and the welcome panel
+  const revealEls = document.querySelectorAll('.reveal, .project-card');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.15 });
+  revealEls.forEach(el => io.observe(el));
+</script>
+<script src="scripts.js"></script>
+</body>
+</html>

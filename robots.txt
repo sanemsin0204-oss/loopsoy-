@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://sanemsin0204-oss.github.io/sitemap.xml

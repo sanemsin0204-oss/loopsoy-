@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Supplies | Loopsoy</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="All the supplies I use for my crochet projects — affiliate links and a Pinterest board to browse.">
+  <link rel="canonical" href="https://sanemsin0204-oss.github.io/supplies.html">
+</head>
+<body>
+  <header class="site-nav">
+    <div class="container">
+      <a class="brand" href="index.html" aria-label="Loopsoy home">
+        <img src="images/logo.png" alt="Loopsoy logo" width="44" height="44">
+        <span class="brand-word">loopsoy</span>
+      </a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="projects.html">Projects</a></li>
+          <li><a href="supplies.html">Supplies</a></li>
+          <li><a href="#" id="ig-link">Instagram</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <span class="eyebrow">Supplies</span>
+          <h2>Shop the exact supplies</h2>
+          <p>Visit the Pinterest board or shop the full list below.</p>
+        </div>
+
+        <div style="text-align:center; margin-bottom:22px;">
+          <a id="pinterest-banner" href="#" target="_blank" rel="noopener" style="display:inline-block; background:var(--paper); padding:18px 28px; border-radius:12px; box-shadow:var(--shadow-sm); text-decoration:none; color:var(--ink);">
+            Browse the Supplies board on Pinterest
+          </a>
+        </div>
+
+        <div id="supplies-list" class="tools-grid" aria-live="polite">
+          <!-- populated by scripts.js from supplies.json -->
+        </div>
+
+        <p class="disclosure">This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases — at no extra cost to you. Thank you for supporting Loopsoy!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <a class="brand" href="index.html"><span class="brand-word">loopsoy</span></a>
+      <ul class="footer-links"><li><a href="projects.html">Projects</a></li><li><a href="supplies.html">Supplies</a></li><li><a class="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></li></ul>
+      <p class="copyright">As an Amazon Associate I earn from qualifying purchases. &copy; <span id="year"></span> Loopsoy.</p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // set the pinterest banner to the value from scripts.js config after DOM loads
+    document.addEventListener('DOMContentLoaded', ()=>{
+      // scripts.js will set the link for #ig-link and #ig-cta; use same config object there
+      // fallback href
+      const p = document.getElementById('pinterest-banner');
+      if(p) p.href = 'https://www.pinterest.com/your_pinterest/';
+    });
+  </script>
+  <script src="scripts.js"></script>
+</body>
+</html>
