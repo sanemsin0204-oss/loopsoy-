@@ -1,11 +1,83 @@
 {
-  "Blue Acrylic Yarn": "https://link.amazon/B0atWJeGH",
-  "White Acrylic Yarn": "https://link.amazon/B01rEeaWg",
-  "Lobster Claw Clasp": "https://link.amazon/B0iDsePDj",
-  "Stitch Markers": "https://link.amazon/B0dp2P8Cq",
-  "4.5mm Crochet Hook": "https://link.amazon/B08D8wPir",
-  "Scissors": "https://link.amazon/B0cErsDPT",
-  "Needle": "https://link.amazon/B026Nlqbo",
-  "Hook Set": "https://link.amazon/B0iJ1xOZ3",
-  "Ergonomic Hook Set": "https://link.amazon/B0hURWLUk"
+  "items": {
+    "Blue Acrylic Yarn": "https://link.amazon/B0atWJeGH",
+    "White Acrylic Yarn": "https://link.amazon/B01rEeaWg",
+    "Salmon Acrylic Yarn": "https://link.amazon/B022zuhWo",
+    "Purple Acrylic Yarn": "https://link.amazon/B036yJmKk",
+    "Red Acrylic Yarn": "https://link.amazon/B0bmYiiMU",
+    "Green Acrylic Yarn": " https://link.amazon/B0bmYiiMU",
+    "24 Colurs Acrylic Yarn Set": "https://link.amazon/B0dBkIxlu",
+    "Lobster Claw Clasp": "https://link.amazon/B0iDsePDj",
+    "Stitch Markers": "https://link.amazon/B0dp2P8Cq",
+    "4.5mm Crochet Hook": "https://link.amazon/B08D8wPir",
+    "Scissors": "https://link.amazon/B0cErsDPT",
+    "Needle": "https://link.amazon/B026Nlqbo",
+    "O Ring": "https://link.amazon/B04gwVkPl",
+    "Adjustable Buckle Slider": "https://link.amazon/B05wyN97x",
+    "Button Clasps": "ttps://link.amazon/B0hnt4L0T",
+    "Hook Set": "https://link.amazon/B0iJ1xOZ3",
+    "Ergonomic Hook Set": "https://link.amazon/B0hURWLUk",
+    "Cream Cotton Yarn(Thin)": "https://link.amazon/B0gtrnRYl",
+    "Cream Cotton Yarn(Thick)": "https://link.amazon/B0g07BnbE",
+    "Red Cotton Yarn": "https://link.amazon/B0aT74Sm6",
+    "Brown Cotton Yarn": "https://link.amazon/B0aHF61Jc",
+    "Blue Cotton Yarn": "https://link.amazon/B06L6D8ju",
+    "White Cotton Yarn": "https://link.amazon/B047hmh1v",
+    "Salmon Cotton Yarn": "https://link.amazon/B0aO3MxFL",
+    "Sage Cotton Yarn": "https://link.amazon/B0fLWF84V",
+    "Green Cotton Yarn": "https://link.amazon/B0fLWF84V",
+    "Pale Green Cotton Yarn": "https://link.amazon/B03XdUlCV",
+    "Light Blue Chenile Yarn": "https://link.amazon/B05BBAZJi",
+    "Denim Blue Chenile Yarn": "https://link.amazon/B083g6MFQ",
+    "Beige Chenile Yarn": "https://link.amazon/B00Y9f1Rc"
+  },
+  "common": [
+    "4.5mm Crochet Hook",
+    "Scissors",
+    "Needle",
+    "Stitch Markers"
+  ],
+  "granny-stitch-crossbody-bag": [
+    "Blue Acrylic Yarn",
+    "White Acrylic Yarn",
+    "Lobster Claw Clasp"
+  ],
+  "cream-phone-bag": [
+    "Cream Cotton Yarn(Thin)",
+    "Sage Cotton Yarn",
+    "O Ring",
+    "Adjustable Buckle Slider",
+    "Yellow Cotton Yarn",
+    "Lobster Claw Clasp"
+  ],
+  "granny-tote": [
+    "Salmon Cotton Yarn",
+    "Green Cotton Yarn",
+    "Pale Green Cotton Yarn"
+  ],
+  "hexagon-brown-bag": [
+    "Brown Cotton Yarn",
+    "Yellow Cotton Yarn",
+    "O Ring",
+    "Lobster Claw Clasp",
+    "Sage Cotton Yarn",
+    "Button Clasps"
+  ],
+  "sage-granny-tote": [
+    "Sage Cotton Yarn",
+    "Cream Cotton Yarn(Thick)",
+    "O Ring",
+    "Adjustable Buckle Slider"
+  ],
+  "salmon-phone-bag": [
+    "Salmon Acrylic Yarn",
+    "White Acrylic Yarn",
+    "Lobster Claw Clasp",
+    "Green Cotton Yarn"
+  ],
+  "red-heart-shoulder-bag": [
+    "Red Cotton Yarn",
+    "White Cotton Yarn",
+    "Button Clasps" 
+  ]
 }

@@ -53,16 +53,35 @@ Recommended quick checklist before your first Instagram post:
 
 ## Adding a new project
 
-1. Duplicate `granny-stitch-crossbody-bag.html` and rename it, e.g.
-   `chunky-market-tote.html`.
-2. In the new file: update the `<title>`, meta description, the JSON-LD
-   block, the photo, heading, pro tip, and tool cards.
-3. Drop your project photo in `images/` (a square-cropped thumbnail version
-   works best for the home page card — keep it under ~300KB for fast
-   loading).
-4. In `index.html`, copy the `<article class="project-card">` block inside
-   `#projects` and point it at your new file.
-5. Add a `<url>` entry for the new page in `sitemap.xml`.
+The site now supports multiple project categories through `projects.json` and a reusable project template page.
+
+1. Create a new project page by copying `project-template.html` and renaming it,
+   for example `mini-zip-pouch.html` or `daisy-flower.html`.
+2. Update the page content for that project: title, meta description, photo,
+   category label, heading, short description, pro tip, and supply cards.
+3. Save your project image in `images/` and use a square-cropped thumbnail for
+   the gallery card. Keep the file size reasonable for faster loading.
+4. Add a new entry to `projects.json` with:
+   - `slug`
+   - `title`
+   - `category`
+   - `categoryKey` (`bags`, `accessories`, `plushies`, `flowers`, or `miniatures`)
+   - `description`
+   - `thumb`
+   - `href`
+5. Point `href` to the new HTML file you created, and make sure the image path
+   in `thumb` matches the file you uploaded.
+6. Add a `<url>` entry for the new page in `sitemap.xml`.
+
+### Quick future workflow
+
+When you make a new crochet piece:
+- create the page from the template,
+- add one new object to `projects.json`,
+- upload the image,
+- and update `sitemap.xml`.
+
+That keeps bags, accessories, plushies, flowers, and miniatures all in the same gallery system without needing a separate hard-coded card each time.
 
 ## Hosting it
 

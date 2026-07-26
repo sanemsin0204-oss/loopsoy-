@@ -9,21 +9,7 @@
   <link rel="canonical" href="https://sanemsin0204-oss.github.io/supplies.html">
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container">
-      <a class="brand" href="index.html" aria-label="Loopsoy home">
-        <img src="images/logo.png" alt="Loopsoy logo" width="44" height="44">
-        <span class="brand-word">loopsoy</span>
-      </a>
-      <nav aria-label="Primary">
-        <ul class="nav-links">
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="supplies.html">Supplies</a></li>
-          <li><a href="#" id="ig-link">Instagram</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <main id="main">
     <section class="section">
@@ -44,21 +30,14 @@
           <!-- populated by scripts.js from supplies.json -->
         </div>
 
-        <p class="disclosure">This page contains Amazon affiliate links. I earn from qualifying purchases — at no extra cost to you. Thank you for supporting Loopsoy!</p>
+        <p class="disclosure">This page contains Amazon affiliate links. As an Amazon Associate I earn from qualifying purchases — at no extra cost to you. Thank you for supporting Loopsoy!</p>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <a class="brand" href="index.html"><span class="brand-word">loopsoy</span></a>
-      <ul class="footer-links"><li><a href="projects.html">Projects</a></li><li><a href="supplies.html">Supplies</a></li><li><a class="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></li></ul>
-      <p class="copyright"> &copy; <span id="year"></span> Loopsoy.</p>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
   <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
     // set the pinterest banner to the value from scripts.js config after DOM loads
     document.addEventListener('DOMContentLoaded', ()=>{
       // scripts.js will set the link for #ig-link and #ig-cta; use same config object there

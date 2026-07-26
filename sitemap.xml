@@ -6,8 +6,38 @@
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://sanemsin0204-oss.github.io/granny-stitch-crossbody-bag.html</loc>
-    <changefreq>monthly</changefreq>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/granny-stitch-crossbody-bag.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/cream-phone-bag.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/granny-tote.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/hexagon-brown-bag.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/red-heart-shoulder-bag.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/sage-granny-tote.html</loc>
+    <changefreq>never</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://sanemsin0204-oss.github.io/projects/bags/salmon-phone-bag.html</loc>
+    <changefreq>never</changefreq>
     <priority>0.8</priority>
   </url>
   <!-- Add a new <url> block here for every new project page you publish -->

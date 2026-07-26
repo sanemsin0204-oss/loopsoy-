@@ -1,0 +1,127 @@
+[
+  {
+    "id": 1,
+    "slug": "granny-stitch-crossbody-bag",
+    "title": "Granny Stitch Crossbody Bag",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A soft envelope-flap bag built from classic granny stitch squares, finished with a woven crossbody strap.",
+    "thumb": "images/bags/granny-stitch-bag-thumb.jpg",
+    "href": "projects/bags/granny-stitch-crossbody-bag.html",
+    "featured": true
+  },
+  {
+    "id": 2,
+    "slug": "cream-phone-bag",
+    "title": "Cream Phone Bag",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A compact crochet phone bag with a soft, structured shape and a simple finish.",
+    "thumb": "images/bags/cream-phone-bag.jpeg",
+    "href": "projects/bags/cream-phone-bag.html",
+    "featured": true
+  },
+  {
+    "id": 3,
+    "slug": "granny-tote",
+    "title": "Granny Tote",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A roomy tote made with classic granny stitch texture and a sturdy finish.",
+    "thumb": "images/bags/granny-tote.jpeg",
+    "href": "projects/bags/granny-tote.html",
+    "featured": true
+  },
+  {
+    "id": 4,
+    "slug": "hexagon-brown-bag",
+    "title": "Hexagon Brown Bag",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A structured bag built from hexagon motifs with a warm brown palette.",
+    "thumb": "images/bags/hexagon-brown-bag.jpeg",
+    "href": "projects/bags/hexagon-brown-bag.html",
+    "featured": true
+  },
+  {
+    "id": 5,
+    "slug": "sage-granny-tote",
+    "title": "Sage Granny Tote",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A soft sage-toned tote with a classic granny texture and a relaxed, boho feel.",
+    "thumb": "images/bags/sage-granny-tote.jpeg",
+    "href": "projects/bags/sage-granny-tote.html",
+    "featured": true
+  },
+  {
+    "id": 6,
+    "slug": "salmon-phone-bag",
+    "title": "Salmon Phone Bag",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A bright and cheerful phone bag with a playful salmon tone and a compact shape.",
+    "thumb": "images/bags/salmon-phone-bag.jpeg",
+    "href": "projects/bags/salmon-phone-bag.html",
+    "featured": true
+  },
+  {
+    "id": 7,
+    "slug": "red-heart-shoulder-bag",
+    "title": "Red Heart Shoulder Bag",
+    "category": "Bags",
+    "categoryKey": "bags",
+    "description": "A playful shoulder bag with a heart motif and a handmade feel.",
+    "thumb": "images/bags/heart-shoulder-bag.jpeg",
+    "href": "projects/bags/red-heart-shoulder-bag.html",
+    "featured": true
+  },
+  {
+    "id": 8,
+    "slug": "mini-zip-pouch",
+    "title": "Mini Zip Pouch",
+    "category": "Accessories",
+    "categoryKey": "accessories",
+    "description": "A compact pouch pattern you can use for hooks, coins, or small keepsakes.",
+    "thumb": "images/logo.png",
+    "href": "templates/project-template.html",
+    "featured": true,
+    "template": true
+  },
+  {
+    "id": 9,
+    "slug": "bunny-plushie",
+    "title": "Bunny Plushie",
+    "category": "Plushies",
+    "categoryKey": "plushies",
+    "description": "A simple plushie with a rounded body and tiny embroidered details.",
+    "thumb": "images/logo.png",
+    "href": "templates/project-template.html",
+    "featured": true,
+    "template": true
+  },
+  {
+    "id": 10,
+    "slug": "daisy-flower",
+    "title": "Daisy Flower",
+    "category": "Flowers",
+    "categoryKey": "flowers",
+    "description": "A cheerful flower motif that works for brooches, hair clips, or gift toppers.",
+    "thumb": "images/logo.png",
+    "href": "templates/project-template.html",
+    "featured": true,
+    "template": true
+  },
+  {
+    "id": 11,
+    "slug": "tiny-teacup",
+    "title": "Tiny Teacup Miniature",
+    "category": "Miniatures",
+    "categoryKey": "miniatures",
+    "description": "A miniature teacup project perfect for dollhouses, shelves, or display corners.",
+    "thumb": "images/logo.png",
+    "href": "project-template.html",
+    "featured": true,
+    "template": true
+  }
+]

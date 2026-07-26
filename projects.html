@@ -9,21 +9,7 @@
   <link rel="canonical" href="https://sanemsin0204-oss.github.io/projects.html">
 </head>
 <body>
-  <header class="site-nav">
-    <div class="container">
-      <a class="brand" href="index.html" aria-label="Loopsoy home">
-        <img src="images/logo.png" alt="Loopsoy logo" width="44" height="44">
-        <span class="brand-word">loopsoy</span>
-      </a>
-      <nav aria-label="Primary">
-        <ul class="nav-links">
-          <li><a href="projects.html">Projects</a></li>
-          <li><a href="supplies.html">Supplies</a></li>
-          <li><a class="ig-link" href="#">Instagram</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
+  <div id="site-header"></div>
 
   <main id="main">
     <section class="section">
@@ -34,31 +20,94 @@
           <p>Each project page includes my pro tip and every tool I used, linked and ready to shop.</p>
         </div>
 
-        <div class="project-grid">
-          <article class="project-card">
-            <a class="thumb" href="granny-stitch-crossbody-bag.html">
-              <img src="images/granny-stitch-bag-thumb.jpg" alt="Granny stitch bag thumbnail" loading="lazy" width="800" height="800">
-            </a>
-            <div class="body">
-              <h3><a href="granny-stitch-crossbody-bag.html">Granny Stitch Crossbody Bag</a></h3>
-              <p class="desc">A soft envelope-flap bag built from classic granny stitch squares, finished with a woven crossbody strap.</p>
-              <a class="card-link" href="granny-stitch-crossbody-bag.html">View the project</a>
-            </div>
-          </article>
+        <div class="pill-row" id="category-filters" style="justify-content:center; margin-bottom:24px;">
+          <a class="pill" data-filter="all" href="projects.html" style="cursor:pointer; border:1px solid transparent;">All</a>
+          <a class="pill" data-filter="bags" href="projects.html?category=bags" style="cursor:pointer; border:1px solid transparent;">Bags</a>
+          <a class="pill" data-filter="accessories" href="projects.html?category=accessories" style="cursor:pointer; border:1px solid transparent;">Accessories</a>
+          <a class="pill" data-filter="plushies" href="projects.html?category=plushies" style="cursor:pointer; border:1px solid transparent;">Plushies</a>
+          <a class="pill" data-filter="flowers" href="projects.html?category=flowers" style="cursor:pointer; border:1px solid transparent;">Flowers</a>
+          <a class="pill" data-filter="miniatures" href="projects.html?category=miniatures" style="cursor:pointer; border:1px solid transparent;">Miniatures</a>
         </div>
+
+        <div class="project-grid" id="project-grid"></div>
       </div>
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <a class="brand" href="index.html"><span class="brand-word">loopsoy</span></a>
-      <ul class="footer-links"><li><a href="projects.html">Projects</a></li><li><a href="supplies.html">Supplies</a></li><li><a class="ig-link" href="#" target="_blank" rel="noopener">Instagram</a></li></ul>
-      <p class="copyright"> &copy; <span id="year"></span> Loopsoy.</p>
-    </div>
-  </footer>
+  <div id="site-footer"></div>
 
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  <script>
+    const filters = Array.from(document.querySelectorAll('[data-filter]'));
+    const grid = document.getElementById('project-grid');
+    let projects = [];
+    let activeFilter = 'all';
+
+    function getInitialFilter() {
+      const params = new URLSearchParams(window.location.search);
+      const category = params.get('category');
+      return filters.some(filter => filter.getAttribute('data-filter') === category) ? category : 'all';
+    }
+
+    function updateFilterUI() {
+      filters.forEach(link => {
+        const isActive = link.getAttribute('data-filter') === activeFilter;
+        link.style.border = isActive ? '1px solid var(--coral-deep)' : '1px solid transparent';
+        link.setAttribute('aria-current', isActive ? 'page' : 'false');
+      });
+    }
+
+    function renderProjects() {
+      const visible = projects.filter(project => {
+        return project.template !== true && (activeFilter === 'all' || project.categoryKey === activeFilter);
+      });
+      grid.innerHTML = '';
+      visible.forEach(project => {
+        const article = document.createElement('article');
+        article.className = 'project-card';
+        article.innerHTML = `
+          <a class="thumb" href="${project.href}">
+            <img src="${project.thumb}" alt="${project.title} thumbnail" loading="lazy" width="800" height="800">
+          </a>
+          <div class="body">
+            <h3><a href="${project.href}">${project.title}</a></h3>
+            <p class="desc">${project.description}</p>
+            <p class="pill" style="margin-bottom:12px; display:inline-flex;">${project.category}</p>
+            <a class="card-link" href="${project.href}">View the project</a>
+          </div>
+        `;
+        grid.appendChild(article);
+      });
+      updateFilterUI();
+    }
+
+    fetch('data/projects.json')
+      .then(response => response.ok ? response.json() : [])
+      .then(data => {
+        projects = Array.isArray(data) ? data.filter(project => {
+          return project.href && !project.href.includes('project-template.html');
+        }) : [];
+        activeFilter = getInitialFilter();
+        renderProjects();
+      })
+      .catch(() => {
+        grid.innerHTML = '<p class="desc">Projects will appear here once you add entries to data/projects.json.</p>';
+      });
+
+    filters.forEach(link => {
+      link.addEventListener('click', (event) => {
+        const nextFilter = link.getAttribute('data-filter');
+        activeFilter = nextFilter;
+
+        const url = new URL(window.location.href);
+        if (nextFilter === 'all') {
+          url.searchParams.delete('category');
+        } else {
+          url.searchParams.set('category', nextFilter);
+        }
+        window.location.href = url.toString();
+      });
+    });
+  </script>
   <script src="scripts.js"></script>
 </body>
 </html>
