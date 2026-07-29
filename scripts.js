@@ -7,11 +7,11 @@
   };
 
   function getSiteRoot() {
-    const path = window.location.pathname.replace(/\\/g, '/');
-    const segments = path.split('/').filter(Boolean);
-    const depth = Math.max(0, segments.length - 1);
-    return depth > 0 ? '../'.repeat(depth) : '';
-  }
+  const script = document.currentScript || document.querySelector('script[src*="scripts.js"]');
+  const src = script ? script.getAttribute('src') : '';
+  const match = src.match(/^(\.\.\/)+/);
+  return match ? match[0] : '';
+}
 
   function loadPartial(id, path, siteRoot) {
     const container = document.getElementById(id);
