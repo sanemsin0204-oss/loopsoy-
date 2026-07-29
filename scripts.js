@@ -11,7 +11,7 @@
   const src = script ? script.getAttribute('src') : '';
   const match = src.match(/^(\.\.\/)+/);
   return match ? match[0] : '';
-}
+ }
 
   function loadPartial(id, path, siteRoot) {
     const container = document.getElementById(id);
